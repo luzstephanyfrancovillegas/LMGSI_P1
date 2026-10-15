@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Cerca de pel·lícules i informació sobre elles.">
+    <title>Index</title>
+    <link rel="icon" href="img/icon.png" type="image/png">
 </head>
 
 <body>
@@ -16,19 +18,22 @@
 
         <nav>
             <ul>
-                <li><a href="#">Buscador</a></li>
-                <li><a href="#">Contacte</a></li>
+                <li><a href="index.html">Buscador</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <Section>
-            <h1>BUSCAR una película</h1>
+            <h1>BUSCAR una pel·lícula</h1>
             <p>Milions de títols, un sol cercador.</p>
             <div>
-                <input type="text" placeholder="Cerca una película, per exemple «Dune»...">
-                <button type="submit">Cercar</button>
+                <form method="get" action="https://www.themoviedb.org/search">
+                    <input type="search" id="query" name="query" placeholder="Cerca una pel·lícula, per exemple «Dune»...">
+                    <label for="query">Busca una peli</label>
+                    <button type="submit">Cercar</button>
+                </form>
             </div>
         </section>
 
@@ -54,10 +59,9 @@
                 </article>
             </div>
         </section>
-    </main>
-
+</main>
     <footer>
-        <p>&copy; 2026 The Movie Database - Maqueta de disseny</p>
+        <p>© 2026 The Movie Database - Maqueta de disseny</p>
     </footer>
 </body>
 </html>
